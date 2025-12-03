@@ -1,4 +1,4 @@
-package org.example.multinationalpharmaceuticalcompany.Administrator_user1;
+package org.example.multinationalpharmaceuticalcompany.administrator_user1;
 
 public class DashboardController
 {

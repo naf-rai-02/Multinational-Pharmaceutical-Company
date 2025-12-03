@@ -1,4 +1,4 @@
-package org.example.multinationalpharmaceuticalcompany;
+package org.example.multinationalpharmaceuticalcompany.production_manager_user3;
 
 public class goal7Controller
 {

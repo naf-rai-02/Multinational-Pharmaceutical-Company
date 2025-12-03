@@ -7,8 +7,11 @@ module org.example.multinationalpharmaceuticalcompany {
     opens org.example.multinationalpharmaceuticalcompany to javafx.fxml;
     exports org.example.multinationalpharmaceuticalcompany;
 
-    opens org.example.multinationalpharmaceuticalcompany.Administrator_user1 to javafx.fxml;
-    exports org.example.multinationalpharmaceuticalcompany.Administrator_user1;
+    opens org.example.multinationalpharmaceuticalcompany.sales_marketing_user5 to javafx.fxml;
+    exports org.example.multinationalpharmaceuticalcompany.sales_marketing_user5;
+
+    opens org.example.multinationalpharmaceuticalcompany.administrator_user1 to javafx.fxml;
+    exports org.example.multinationalpharmaceuticalcompany.administrator_user1;
 
     opens org.example.multinationalpharmaceuticalcompany.production_manager_user3 to javafx.fxml;
     exports org.example.multinationalpharmaceuticalcompany.production_manager_user3;
