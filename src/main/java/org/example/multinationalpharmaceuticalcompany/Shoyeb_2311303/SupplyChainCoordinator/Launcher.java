@@ -6,6 +6,6 @@ import static javafx.application.Application.*;
 
 public class Launcher {
     public static void main(String[] args) {
-        launch(HelloApplication.class, args);
+        zlaunch(HelloApplication.class, args);
     }
 }
