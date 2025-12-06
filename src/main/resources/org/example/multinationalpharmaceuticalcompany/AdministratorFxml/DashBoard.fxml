@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.multinationalpharmaceuticalcompany.Administrator.DashBoardController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="219.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="14.0" layoutY="144.0" mnemonicParsing="false" onAction="#manageEmployeeButton" prefHeight="39.0" prefWidth="189.0" text="Manage Employee">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="203.0" mnemonicParsing="false" onAction="#activeDeactivateButton" prefHeight="39.0" prefWidth="190.0" text="Account Active/Deactivate">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="265.0" mnemonicParsing="false" onAction="#systemButton" prefHeight="39.0" prefWidth="190.0" text="System Access">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="405.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="39.0" prefWidth="190.0" text="Log out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="23.0" layoutY="14.0" prefHeight="54.0" prefWidth="165.0" text="Administrator">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="474.0" prefWidth="734.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

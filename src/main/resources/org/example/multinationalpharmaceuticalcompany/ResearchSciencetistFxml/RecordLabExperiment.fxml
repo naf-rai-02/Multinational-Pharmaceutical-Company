@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="493.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.multinationalpharmaceuticalcompany.ResearchScientist.RecordLabExperimentController">
+   <children>
+      <Label layoutX="24.0" layoutY="43.0" text="Experiment Name:" />
+      <TextField fx:id="expName" layoutX="139.0" layoutY="39.0" />
+      <Label layoutX="320.0" layoutY="43.0" text="Experiment Date:" />
+      <DatePicker fx:id="date" layoutX="427.0" layoutY="39.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="24.0" layoutY="79.0" text="Equipment Name:" />
+      <TextField fx:id="equName" layoutX="139.0" layoutY="75.0" />
+      <Label layoutX="320.0" layoutY="79.0" text="Danger Level:" />
+      <ComboBox fx:id="dangerCB" layoutX="427.0" layoutY="75.0" prefWidth="150.0" />
+      <TextArea fx:id="description" layoutX="139.0" layoutY="116.0" prefHeight="70.0" prefWidth="200.0" />
+      <Label layoutX="24.0" layoutY="116.0" text="Description:" />
+      <TableView fx:id="tableView" layoutX="23.0" layoutY="233.0" prefHeight="246.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="expnameCl" prefWidth="120.00006103515625" text="Experiment Name" />
+          <TableColumn fx:id="equnameCl" prefWidth="123.20001220703125" text="Equipment Name" />
+            <TableColumn fx:id="dangerCl" prefWidth="93.5999755859375" text="Danger Level" />
+            <TableColumn fx:id="descriptionCl" prefWidth="120.79998779296875" text="Description" />
+            <TableColumn fx:id="dateCl" prefWidth="95.199951171875" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="392.0" layoutY="131.0" mnemonicParsing="false" onAction="#saveAndLoadButton" prefHeight="39.0" prefWidth="150.0" text="Save Info &amp; Load Table" />
+      <TextField fx:id="search" layoutX="24.0" layoutY="201.0" />
+      <Button layoutX="191.0" layoutY="200.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="26.0" prefWidth="95.0" text="Search" />
+      <Button layoutX="308.0" layoutY="200.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="26.0" prefWidth="95.0" text="Reset" />
+   </children>
+</AnchorPane>
