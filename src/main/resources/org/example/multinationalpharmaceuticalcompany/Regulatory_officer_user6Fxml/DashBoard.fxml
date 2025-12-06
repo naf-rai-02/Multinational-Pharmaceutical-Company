@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.multinationalpharmaceuticalcompany.Regulatory_officer_user6.DashBoardController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="251.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="25.0" layoutY="167.0" mnemonicParsing="false" onAction="#regionProfile" prefHeight="42.0" prefWidth="194.0" text="Region Profile">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="256.0" mnemonicParsing="false" onAction="#complianceRequirement" prefHeight="42.0" prefWidth="201.0" text="Compliance Requirement">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="340.0" mnemonicParsing="false" onAction="#recordSubmission" prefHeight="42.0" prefWidth="201.0" text="Record Submission Delay">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="522.0" mnemonicParsing="false" onAction="#logOut" prefHeight="42.0" prefWidth="201.0" text="Log Out">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="11.0" layoutY="49.0" text="Regulatory Affairs Officer">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
