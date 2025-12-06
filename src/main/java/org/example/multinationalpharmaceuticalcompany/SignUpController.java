@@ -44,15 +44,15 @@ public class SignUpController
         String fxmlPath = "";
 
         if (userTpeCB.getValue().equals("Administrator")) {
-            fxmlPath = "/oop/cse211/AdministratorFxml/DashBoard.fxml";
+            fxmlPath = "/org/example/multinationalpharmaceuticalcompany/AdministratorFxml/DashBoard.fxml";
         } else if (userTpeCB.getValue().equals("Production Manager")) {
-            fxmlPath = "/oop/cse211/ProductionManagerFxml/DashBoard.fxml";
+            fxmlPath = "/org/example/multinationalpharmaceuticalcompany/Production_ManagerFxml/DashBoard.fxml";
         } else if (userTpeCB.getValue().equals("Research Scientist")) {
-            fxmlPath = "/oop/cse211/ResearchScientistFxml/DashBoard.fxml";
+            fxmlPath = "/org/example/multinationalpharmaceuticalcompany/ResearchSciencetistFxml/DashBoard.fxml";
         } else if (userTpeCB.getValue().equals("Regulatory Affairs Officer")) {
             fxmlPath = "/org/example/multinationalpharmaceuticalcompany/Regulatory_officer_user6Fxml/DashBoard.fxml";
         } else if (userTpeCB.getValue().equals("Quality Assurance Officer")) {
-            fxmlPath = "/oop/cse211/QualityAssuranceOfficerFxml/DashBoard.fxml";
+            fxmlPath = "/org/example/multinationalpharmaceuticalcompany/Quality_Assurance_OfficerFxml/DashBoard.fxml";
         } else if (userTpeCB.getValue().equals("Sales Marketing Executive")) {
             fxmlPath = "/org/example/multinationalpharmaceuticalcompany/Sales_marketing_user5Fxml/DashBord.fxml";
         }
@@ -81,7 +81,7 @@ public class SignUpController
         userTpeCB.setValue(null);
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/oop/cse211/logIn.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("logIn.fxml"));
             Parent root = fxmlLoader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

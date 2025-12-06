@@ -52,7 +52,7 @@ public class DashBoardController
     @javafx.fxml.FXML
     public void logoutButton(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/oop/cse211/logIn.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("logIn.fxml"));
             Parent root = fxmlLoader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
