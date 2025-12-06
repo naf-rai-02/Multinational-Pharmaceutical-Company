@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.multinationalpharmaceuticalcompany.Quality_Assurance_Officer.BatchInspectionTimelineController">
+   <children>
+      <Label layoutX="36.0" layoutY="30.0" text="Batch ID:" />
+      <TextField fx:id="batchid" layoutX="101.0" layoutY="26.0" />
+      <Label layoutX="300.0" layoutY="30.0" text="Product Name:" />
+      <TextField fx:id="productName" layoutX="395.0" layoutY="26.0" />
+      <Label layoutX="36.0" layoutY="80.0" text="Product Details:" />
+      <TextArea fx:id="details" layoutX="140.0" layoutY="80.0" prefHeight="68.0" prefWidth="410.0" />
+      <Label layoutX="36.0" layoutY="162.0" text="Action Steps:" />
+      <TextArea fx:id="steps" layoutX="140.0" layoutY="162.0" prefHeight="68.0" prefWidth="410.0" />
+      <RadioButton layoutX="40.0" layoutY="259.0" mnemonicParsing="false" text="Excellent">
+         <toggleGroup>
+            <ToggleGroup fx:id="inspection" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="140.0" layoutY="259.0" mnemonicParsing="false" text="Good" toggleGroup="$inspection" />
+      <RadioButton layoutX="216.0" layoutY="259.0" mnemonicParsing="false" text="Bad" toggleGroup="$inspection" />
+      <RadioButton layoutX="300.0" layoutY="259.0" mnemonicParsing="false" text="Very Bad" toggleGroup="$inspection" />
+      <Button layoutX="251.0" layoutY="351.0" mnemonicParsing="false" onAction="#saveButton" text="Save Data" />
+      <Label layoutX="43.0" layoutY="298.0" text="Date:" />
+      <DatePicker fx:id="date" layoutX="89.0" layoutY="294.0" />
+   </children>
+</AnchorPane>
