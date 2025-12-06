@@ -2,7 +2,13 @@ module org.example.multinationalpharmaceuticalcompany {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
-    requires javafx.base;
+
+
+    opens org.example.multinationalpharmaceuticalcompany.Administrator to javafx.fxml;
+    opens org.example.multinationalpharmaceuticalcompany.Administrator.ModelClass to javafx.base;
+    opens org.example.multinationalpharmaceuticalcompany.ResearchScientist to javafx.fxml;
+    opens org.example.multinationalpharmaceuticalcompany.ResearchScientist.ModelClass to javafx.base;
+
 
     opens org.example.multinationalpharmaceuticalcompany.Production_Manager to javafx.fxml;
     opens org.example.multinationalpharmaceuticalcompany.Production_Manager.ModelClass to javafx.base;
