@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.multinationalpharmaceuticalcompany.Quality_Assurance_Officer.DashBoardController">
+   <left>
+      <AnchorPane prefHeight="686.0" prefWidth="239.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="23.0" layoutY="164.0" mnemonicParsing="false" onAction="#currectiveAction" prefHeight="54.0" prefWidth="190.0" text="Currective Action">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="23.0" layoutY="246.0" mnemonicParsing="false" onAction="#inspectionButton" prefHeight="54.0" prefWidth="190.0" text="Inspection">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="23.0" layoutY="329.0" mnemonicParsing="false" onAction="#testProtocol" prefHeight="54.0" prefWidth="190.0" text="New Test Protocol">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="24.0" layoutY="597.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="54.0" prefWidth="190.0" text="Log Out">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="16.0" layoutY="38.0" text="Quality Assurance Office">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
